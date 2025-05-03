@@ -1,7 +1,7 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:type="MessageCompose">
-  <Id>your-unique-id-here</Id>
+  <Id>bce7d3fc-1f98-4f43-a68b-760b8826d235</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Kontain</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
