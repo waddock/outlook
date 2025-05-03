@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:type="MessageCompose">
@@ -5,28 +6,32 @@
   <Version>1.0.0.0</Version>
   <ProviderName>Kontain</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName>MetaTag Mailer</DisplayName>
-  <Description>Force tagging of emails with Project Code and Email Type before sending.</Description>
+  <DisplayName DefaultValue="MetaTag Mailer"/>
+  <Description DefaultValue="Force tagging of emails with Project Code and Email Type before sending."/>
+  
+  <IconUrl DefaultValue="https://via.placeholder.com/32"/>
+  <HighResolutionIconUrl DefaultValue="https://via.placeholder.com/64"/>
+  <SupportUrl DefaultValue="https://kontainit.co.uk"/>
+
   <Hosts>
     <Host Name="Mailbox"/>
   </Hosts>
+
   <Requirements>
     <Sets>
       <Set Name="Mailbox" MinVersion="1.5"/>
     </Sets>
   </Requirements>
+
   <FormSettings>
-    <Form xsi:type="ItemRead">
-      <DesktopSettings>
-        <SourceLocation DefaultValue="https://waddock.github.io/outlook/taskpane.html"/>
-      </DesktopSettings>
-    </Form>
     <Form xsi:type="ItemCompose">
       <DesktopSettings>
         <SourceLocation DefaultValue="https://waddock.github.io/outlook/taskpane.html"/>
       </DesktopSettings>
     </Form>
   </FormSettings>
+
   <Permissions>ReadWriteItem</Permissions>
+
   <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
 </OfficeApp>
