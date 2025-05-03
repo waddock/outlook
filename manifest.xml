@@ -1,0 +1,32 @@
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="MessageCompose">
+  <Id>your-unique-id-here</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Kontain</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName>MetaTag Mailer</DisplayName>
+  <Description>Force tagging of emails with Project Code and Email Type before sending.</Description>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.5"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://waddock.github.io/outlook/taskpane.html"/>
+      </DesktopSettings>
+    </Form>
+    <Form xsi:type="ItemCompose">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://waddock.github.io/outlook/taskpane.html"/>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
+</OfficeApp>
